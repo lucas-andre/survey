@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Survey Form</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="box">
+        <h1 id="title" class="text-center">Assinatura vs Compra Permanente.</h1>
+        <p id="description"  class="text-center">Entendendo a preferencia dos usúarios quanto a contratação de serviços/produtos online.</p>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Nome</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">E-mail</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Seu email" required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Idade</label>
+                <input type="number" name="idade" id="number" min="10" max="90" class="form-control" placeholder="Sua idade" required />
+            </div>
+            <div class="form-group">
+                <p>Qual tipo de serviço online você usa?
+                <span class="clue">(Cheque todos que se aplicam)</span>
+                </p>
+
+              <label
+                ><input
+                  name="prefer"
+                  value="assinatura"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Assinatura (Netflix, Spotify, etc)</label
+              >
+              <label>
+              <label
+                ><input
+                  name="prefer"
+                  value="compra"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Compra Permanente</label
+              >
+              <label> 
+            </div>
+            
+            <div class="form-group">
+                <p>Se SIM, quantos?</p>
+                <label><input
+                name="user-recommend"
+                value="um"
+                type="radio"
+                class="input-radio"
+                checked
+                />1-2
+            </label>
+                <label><input
+                name="user-recommend"
+                value="tres"
+                type="radio"
+                class="input-radio"
+                />3-4
+            </label>
+                <label><input
+                name="user-recommend"
+                value="cinco"
+                type="radio"
+                class="input-radio"
+                />Mais de 5
+            </label>
+            </div>
+            <div class="form-group">
+                <p>Qual dessas opções descreve sua atual ocupação?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Selecione uma ocupação</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="trabalho">Trabalho Fixo</option>
+                    <option value="aprendiz">Aprendiz</option>
+                    <option value="empreendedor">Empreendedor</option>
+                    <option value="outro">Outro</option>
+                    <option value="naodizer">Prefiro não dizer</option>
+                </select>
+            </div>
+           <div class="form-group">
+              <p>Comentários ou sugestões?</p>
+              <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Coloque seu comentário..."
+              ></textarea>
+          </div>
+                <div class="form-group">
+              <button type="submit" id="submit" class="submit-button">
+                 ENVIAR
+              </button>
+           </div>
+        </form>
+    </div>
+</body>
+</html>

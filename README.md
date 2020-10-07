@@ -11,7 +11,7 @@ Acesse: https://lucas-andre.github.io/survey
 Baixe os arquivos compactados em .zip diretamente do repositório.
 
 **Por linha de comando.**
-Abra o Git Bash e cole: `git clone https://github.com/lucas-andre/survey`
+Abra o Git Bash e cole: `git clone https://github.com/lucas-andre/survey.git`
 
 
 ## 📃 Licença 
